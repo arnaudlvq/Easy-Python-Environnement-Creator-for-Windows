@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 [![License: PSFL](https://img.shields.io/badge/License-PSFL-blue.svg)](https://docs.python.org/3/license.html)
 
-A powerful yet simple tool to create, manage, and activate Python virtual environments on Windows with a single command from anywhere in your system.
+A powerful yet very simple and straigtforward tool to create, manage, and activate Python virtual environments on Windows with a single command from anywhere in your system.
 
 ## 🚀 Features
 
