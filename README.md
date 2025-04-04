@@ -1,4 +1,4 @@
-# 🐍 Python Environment Creator for Windows
+# 🐍 Easy Python Environment Creator for Windows
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 [![License: PSFL](https://img.shields.io/badge/License-PSFL-blue.svg)](https://docs.python.org/3/license.html)
