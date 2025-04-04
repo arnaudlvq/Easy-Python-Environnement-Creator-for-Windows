@@ -64,7 +64,12 @@ This tool is a first step toward a complete Python environment management soluti
 - Environment cloning: Quickly duplicate environments with the same packages  
 - Requirements management: Import/export environment specifications  
 - Integration with IDEs: Seamless connection to popular development tools  
-- Graphical interface: Optional GUI for visual environment management  
+- Graphical interface: Optional GUI for visual environment management
+
+## 🛠️ Details of files created
+A .bat file is created at the path you specified, or usually in the same folder of installation as the used python version.
+A pythonEnv folder which holds your libraries in stored where you specify it, or usually stored in %USERPROFILE%\Documents\PythonEnvs
+If you delete thoses 2 files, your system is back to its previous state (before venv installation).
 
 ## 📚 Dependencies
 
