@@ -3,7 +3,7 @@ REM ----------------------------------------------------------------------------
 REM Script: create_venv.bat 
 REM Description: 
 REM   1. Finds Python interpreters via 'where python'. 
-REM   2. Lets user pick which Python to use. 
+REM   2. Lets user pick which Python to use (including manual path option). 
 REM   3. Prompts for venv name & folder. 
 REM   4. Creates the venv only if folder doesn't exist.
 REM   5. Prompts for command name (defaults to envname).
@@ -31,18 +31,22 @@ for /f "delims=" %%p in ('where python 2^>nul') do (
     set "pythonPath[!index!]=%%p" 
     set "pythonVersion[!index!]=!version!" 
 ) 
-if %index%==0 ( 
-    echo No accessible "python.exe" found on the PATH. 
-    echo Please install Python or ensure it's in your PATH, then retry. 
-    pause 
-    exit /b 1 
-) 
+
+REM Always add an option to manually specify a Python path
+set /a index=!index! + 1
+set "pythonPath[!index!]=CUSTOM_PATH"
+set "pythonVersion[!index!]=Custom"
+
 echo Found the following Python interpreters: 
 echo( 
 set /a i=1 
 :LIST_PYTHONS 
 if %i% GTR %index% goto LIST_DONE 
-echo  %i%. [!pythonVersion[%i%]!]  !pythonPath[%i%]! 
+if "!pythonPath[%i%]!"=="CUSTOM_PATH" (
+    echo  %i%. [Custom] Specify a different Python path
+) else (
+    echo  %i%. [!pythonVersion[%i%]!]  !pythonPath[%i%]! 
+)
 set /a i+=1 
 goto LIST_PYTHONS 
 :LIST_DONE 
@@ -58,13 +62,41 @@ if %selection% GTR %index% (
     pause 
     exit /b 1 
 ) 
-set "CHOSEN_PYTHON=!pythonPath[%selection%]!" 
-set "CHOSEN_VERSION=!pythonVersion[%selection%]!" 
+
+if "!pythonPath[%selection%]!"=="CUSTOM_PATH" (
+    echo(
+    echo You selected to specify a custom Python path.
+    echo(
+    set /p CHOSEN_PYTHON=Enter the full path to python.exe:  
+    
+    if not exist "%CHOSEN_PYTHON%" (
+        echo Error: The specified python.exe does not exist.
+        pause
+        exit /b 1
+    )
+    
+    REM Grab the Python version string for the custom path
+    for /f "tokens=1,2 delims= " %%i in ('"!CHOSEN_PYTHON!" --version 2^>nul') do (
+        if "%%i"=="Python" (
+            set "CHOSEN_VERSION=%%j"
+        ) else (
+            echo Error: The specified file is not a valid Python interpreter.
+            pause
+            exit /b 1
+        )
+    )
+) else (
+    set "CHOSEN_PYTHON=!pythonPath[%selection%]!" 
+    set "CHOSEN_VERSION=!pythonVersion[%selection%]!" 
+)
+
 echo( 
 echo You selected: %CHOSEN_PYTHON%  (Python %CHOSEN_VERSION%) 
 echo( 
+
 REM Determine folder of chosen python.exe 
 for %%A in ("%CHOSEN_PYTHON%") do set "CHOSEN_PYDIR=%%~dpA" 
+
 REM Ask for environment name 
 set /p ENVNAME=Enter a name for your virtual environment:  
 if "%ENVNAME%"=="" ( 
