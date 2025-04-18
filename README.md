@@ -5,8 +5,8 @@
 
 A powerful yet very simple and straigtforward CLI tool to create, manage, and activate Python virtual environments on Windows with a single command from anywhere in your system.
 
-
-
+  
+  
 ## 🧼 Because Not All Windows Users Are Dirty!
 Keep your development space spick and span with ManagePyEnvs—your environment janitor for Windows.
 No more clutter, no more confusion: just clean, isolated Python environments at your fingertips!
@@ -36,9 +36,9 @@ https://github.com/user-attachments/assets/06e3816c-dda3-41d1-9a95-317223c37073
   Easily scans and removes your virtual environments and their activation shortcuts.
 
 - 🎈 **Safe & User-Friendly**  
-  Protects against overwrites, confirms actions clearly, and gracefully handles errors.
+  Protects against overwrites, confirms actions clearly, and gracefully handles errors.  
 
-
+  
 
 ## 📖 How It Works
 
@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/06e3816c-dda3-41d1-9a95-317223c37073
    - **Locate**: Finds environments in your specified root (default: `%USERPROFILE%\Documents\PythonEnvs`).
    - **List**: Shows all discovered environments clearly.
    - **Confirm**: You choose and confirm which environment to delete.
-   - **Cleanup**: Removes environment files and activation shortcuts.
+   - **Cleanup**: Removes environment files and activation shortcuts.  
 
 
 
@@ -74,7 +74,7 @@ https://github.com/user-attachments/assets/06e3816c-dda3-41d1-9a95-317223c37073
 ```bat
 C:\> myenv         # runs generated shortcut
 (myenv) C:\>       # environment activated!
-```
+```  
 
 
 
@@ -84,7 +84,7 @@ C:\> myenv         # runs generated shortcut
 - **🔄 Robust Variable Expansion** ensures reliable batch scripting.
 - **📌 Smart PATH Integration** checks and updates environment PATH intelligently.
 - **📁 Clean Metadata Management** keeps shortcut paths organized.
-- **✅ Graceful Error Handling** catches common pitfalls early.
+- **✅ Graceful Error Handling** catches common pitfalls early.  
 
 
 
@@ -96,7 +96,7 @@ Your contributions, issues, and ideas are always welcome!
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request 📬
+5. Open a Pull Request 📬  
 
 
 
