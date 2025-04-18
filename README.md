@@ -9,13 +9,13 @@ A powerful yet very simple and straigtforward CLI tool to create, manage, and ac
 # 🚀 ManagePyEnvs
 _A fun and friction-free CLI tool to create and delete Python virtual environments on Windows!_
 
----
+
 
 ## 🧼 Because Not All Windows Users Are Dirty!
 Keep your development space spick and span with ManagePyEnvs—your environment janitor for Windows.
 No more clutter, no more confusion: just clean, isolated Python environments at your fingertips!
 
----
+
 
 ## 🎯 Features
 
@@ -35,7 +35,7 @@ No more clutter, no more confusion: just clean, isolated Python environments at 
 - 🎈 **Safe & User-Friendly**  
   Protects against overwrites, confirms actions clearly, and gracefully handles errors.
 
----
+
 
 ## 📖 How It Works
 
@@ -56,7 +56,7 @@ No more clutter, no more confusion: just clean, isolated Python environments at 
    - **Confirm**: You choose and confirm which environment to delete.
    - **Cleanup**: Removes environment files and activation shortcuts.
 
----
+
 
 ## 🚀 Installation & Usage
 
@@ -73,7 +73,7 @@ C:\> myenv         # runs generated shortcut
 (myenv) C:\>       # environment activated!
 ```
 
----
+
 
 ## ⚙️ Technical Highlights
 
@@ -83,7 +83,7 @@ C:\> myenv         # runs generated shortcut
 - **📁 Clean Metadata Management** keeps shortcut paths organized.
 - **✅ Graceful Error Handling** catches common pitfalls early.
 
----
+
 
 ## 🤝 Contributing
 
@@ -95,10 +95,9 @@ Your contributions, issues, and ideas are always welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request 📬
 
----
+
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
 The Python Standard Library’s `venv` module is covered by the **PSF License**.
-````
