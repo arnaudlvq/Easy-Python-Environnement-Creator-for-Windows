@@ -5,17 +5,18 @@
 
 A powerful yet very simple and straigtforward CLI tool to create, manage, and activate Python virtual environments on Windows with a single command from anywhere in your system.
 
-  &nbsp;
+&nbsp;
   
 ## 🧼 Because Not All Windows Users Are Dirty!
 Keep your development space spick and span with ManagePyEnvs—your environment janitor for Windows.
 No more clutter, no more confusion: just clean, isolated Python environments at your fingertips!
 
-
+&nbsp;
 
 https://github.com/user-attachments/assets/005cf921-a470-4a4e-a494-d8db5d834cff
 
 https://github.com/user-attachments/assets/06e3816c-dda3-41d1-9a95-317223c37073
+
 
 
 &nbsp;
