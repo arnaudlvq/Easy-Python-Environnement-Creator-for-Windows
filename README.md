@@ -15,7 +15,8 @@ No more clutter, no more confusion: just clean, isolated Python environments at 
 
 https://github.com/user-attachments/assets/005cf921-a470-4a4e-a494-d8db5d834cff
 
-https://github.com/user-attachments/assets/06e3816c-dda3-41d1-9a95-317223c37073
+
+https://github.com/user-attachments/assets/79a5a6ac-98d9-4299-9249-8dfbb07a402e
 
 
 
