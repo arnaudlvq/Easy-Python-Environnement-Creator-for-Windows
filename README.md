@@ -6,10 +6,6 @@
 A powerful yet very simple and straigtforward CLI tool to create, manage, and activate Python virtual environments on Windows with a single command from anywhere in your system.
 
 
-# 🚀 ManagePyEnvs
-_A fun and friction-free CLI tool to create and delete Python virtual environments on Windows!_
-
-
 
 ## 🧼 Because Not All Windows Users Are Dirty!
 Keep your development space spick and span with ManagePyEnvs—your environment janitor for Windows.
