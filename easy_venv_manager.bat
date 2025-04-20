@@ -211,12 +211,6 @@ echo   %ACTIVATE_BAT%
 
 (
     echo @echo off
-    echo rem Ensure the chosen Python directory is in PATH ^(if missing^)
-    echo echo %%PATH%% ^| find /i "%CHOSEN_PYDIR%" ^>nul 2^>nul
-    echo if errorlevel 1 ^(
-    echo     set PATH=%CHOSEN_PYDIR%;%%PATH%%
-    echo ^)
-    echo rem Now activate the virtual environment
     echo call "%VENV_PATH%\Scripts\activate"
 ) > "%ACTIVATE_BAT%"
 echo(
