@@ -65,14 +65,14 @@ https://github.com/user-attachments/assets/79a5a6ac-98d9-4299-9249-8dfbb07a402e
 
 ## 🚀 Installation & Usage
 
-1. **📥 Download** `ManagePyEnvs.bat` to a location of your choice.
-2. **🚀 Run** from any Command Prompt (or double-click):
+1. **Download** `easy_venv_manager.bat` to a location of your choice.
+2. **Run** from any Command Prompt (or double-click):
    ```bat
-   C:\> ManagePyEnvs.bat
+   C:\> easy_venv_manager.bat
    ```
-3. **🎯 Follow prompts** to manage your environments!
+3. **Follow prompts** to manage your environments!
 
-**✨ Activate** your new environment instantly:
+**✨ Activate** your new environment instantly anywhere:
 ```bat
 C:\> myenv         # runs generated shortcut
 (myenv) C:\>       # environment activated!
@@ -82,23 +82,17 @@ C:\> myenv         # runs generated shortcut
 
 ## ⚙️ Technical Highlights
 
-- **🐍 Dynamic Python Detection** with `where python` & version parsing.
-- **🔄 Robust Variable Expansion** ensures reliable batch scripting.
-- **📌 Smart PATH Integration** checks and updates environment PATH intelligently.
-- **📁 Clean Metadata Management** keeps shortcut paths organized.
-- **✅ Graceful Error Handling** catches common pitfalls early.  
+- **Dynamic Python Detection** with `where python` & version parsing.
+- **Robust Variable Expansion** ensures reliable batch scripting.
+- **Smart PATH Integration** checks and updates environment PATH intelligently.
+- **Clean Metadata Management** keeps shortcut paths organized.
+- **Graceful Error Handling** catches common pitfalls early.  
 
 &nbsp;
 
 ## 🤝 Contributing
 
 Your contributions, issues, and ideas are always welcome!
-
-1. Fork the repository 🍴
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request 📬  
 
 &nbsp;
 
