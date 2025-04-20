@@ -7,7 +7,7 @@ A powerful yet very simple and straigtforward CLI tool to create, manage, and ac
 
 &nbsp;
   
-## 🧼 Because Not All Windows Users Are Dirty!
+## 🧼 Because Clean Doesn't Have to Mean Complicated
 Keep your development space spick and span with this CLI tool.
 No more clutter, no more confusion: just clean, isolated Python environments at your fingertips!
 
